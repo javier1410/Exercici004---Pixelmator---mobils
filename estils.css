@@ -92,7 +92,44 @@ nav p{
     
 }
 
-/* ====== Mòbil =====*/
+/* = = = = = = Mòbil F1= = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+    .f1{
+        max-width: 500px;
+    }
+    /* Esconder nav */
+    nav{ display:none; }
+
+    .box_opcions{
+        align-items:center;
+        justify-content: center;
+    }
+
+    .opcions_r{
+        width: 100%;
+        justify-content:flex-end; /* botón a la derecha */
+    }
+    .opcions_r p{ display:none; }   /* ocultar los textos extras */
+    .opcions_r button{
+        margin:15px 0;
+    }
+
+    .img_portatil{
+    padding: 20px 0 50px 0;
+    width: 115%;   
+}
+
+.nom_programa {
+    white-space: nowrap; /* evita que el texto salte de línea */
+    display: inline-block; /* asegura que se comporte como una línea */
+}
+.nom_num{
+    display: none;
+}
+
+}
 
 
 /* - - - - - - - - - - - - F2 - - - - -- - - - - - - - - */
@@ -127,6 +164,33 @@ nav p{
     height: auto;
 }
 
+
+/* = = = = = = Mòbil F2 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+    .boxf2 p{
+    font-size: 18px;
+    font-weight: 200;
+    text-align: center;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.boton-appstore {
+    margin: 15px 0 80px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 25px;
+    background-color: #fff;
+    color: rgb(246, 67, 96); /* Esto cambia también el color del SVG */
+    border: 1px solid rgb(246, 67, 96);
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+}
 
 
 
