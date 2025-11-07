@@ -719,18 +719,124 @@ h3{
 
 /* = = = = = = Mòbil F8= = = = = */
 /* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
 
-@media (max-width:768px){
-    .f8{
-        max-width: 500px;
-    }
-    /* Esconder nav */
-    nav{ display:none; }
+  /* Contenedor principal */
+  
+.Boxf8{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    
+    
+} 
+.circular {
+  
+  font-size: 40px; 
+  font-weight: center;
+  
+}
 
-    .box_opcions{
-        align-items:center;
-        justify-content: center;
-    }
+.img_curva{display: none;}
+
+
+.headerf8{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 100px;
+    width: 100%;  
+    position: relative;  /* Para z-index */
+    z-index: 2; 
+}
+
+.headerf8 p{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 300;
+    padding-top: 70px;
+    
+}
+.carta-verde{
+     flex-direction: column; /* apilada */
+    align-items: center;
+    width: 95%;
+    height: 700px;
+    border-radius: 25px; 
+
+}   
+
+.carta-vede-titulo{
+   margin-left: 0;
+    padding: 1rem;
+    
+}
+
+.carta-verde p{
+    color: white;
+    width: 400px;
+    
+    
+}
+
+.carta-verde h3{
+    color: white;
+    margin-left: 0px;
+    
+    
+}
+
+.carta-verde img{
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    
+}
+
+.cartas_f8{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.New-York{
+    border-radius:20px;
+    width: 400px; 
+    background-color:#f9f9f9 ;
+    color:#565656;
+    align-items: center;
+  height: 300px;
+    padding: 20px;
+    
+   }
+.New-York h3{
+    color: black;
+    margin-left: 6px;
+}
+
+.New-York video{
+    width: 100%;
+    height: 50px;
+    align-items: left;
+}
+.graphique{
+    border-radius:20px;
+    width: 400px; 
+    background-color:#f9f9f9 ;
+    color:#565656;
+    align-items: center;
+    padding: 20px;
+}
+.graphique h3{
+    color: black;
+    margin-left: 6px;
+}
+.graphique img{
+    width: 80%;
+    height: auto;
+}
 }
 
 /* - - - - - - - - - - - - F9 - - - - -- - - - - - - - - */
