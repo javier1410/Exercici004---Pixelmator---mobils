@@ -282,6 +282,146 @@ h3{
 
 }
 
+
+/* = = = = = = Mòbil F3 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+
+    br {
+        display: none;
+    }
+
+/* Contenedor principal */
+.boxf3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Título principal */
+.titol_f3{
+    margin: 50px 0 0 0;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+/* Párrafos */
+.text_f3{
+    color: #bbb;
+    line-height: 1.5;
+    font-size: 19px;
+    font-weight: 300;
+    padding: 10px 20px;
+}
+
+/* Imagen principal */
+.img_f3_1{
+    margin: 0;
+    max-width: 95%;
+    width: auto;
+    height: auto;
+    
+}
+
+/* Cuadros (izq y der) apilados */
+.box_quadrats_f3{
+    display: flex;
+    flex-direction: column;  
+    gap: 25px;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    
+    
+}
+
+/* Estilos comunes a ambos cuadros */
+.quadrat_l_f3,
+.quadrat_r_f3{
+    background-color: #1d1d1f;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 22px;
+    margin: 0 20px 0 20px;  
+}
+
+.quadrat_l_f3{
+    padding: 15px 20px 0 20px;
+}
+.quadrat_r_f3{
+    padding: 15px 20px;
+}
+
+/* Título dentro de cuadros */
+.quadrat_l_f3 h3,
+.quadrat_r_f3 h3,
+.rectangle_f3 h3{
+    color: #eee;
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+/* Texto dentro de cuadros */
+.quadrat_l_f3 p,
+.quadrat_r_f3 p,
+.rectangle_f3 p{
+    margin: 0;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 300;
+    text-align:start;        
+    padding: 0 10px;
+}
+
+/* Imágenes dentro de cuadros */
+.quadrat_l_f3 img{
+    width: 80%;
+    margin: 35px auto 0px auto;
+    
+
+}
+
+.quadrat_r_f3 img{
+    width: 80px;
+    margin: 25px auto 10px auto;
+}
+
+/* Bloque rectangular inferior (texto + video) */
+.box_rectangle_f3{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: #1d1d1f;
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 22px;
+    overflow: hidden; 
+}
+
+/* Texto del bloque rectangular */
+.rectangle_f3{
+    width: 100%;
+}
+
+/* Video reducido y centrado */
+.video_f3{
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+}
+
 /* - - - - - - - - - - - F4 - - - - - - - - - - - - - - */
 .boxf4{
     align-items: center;
