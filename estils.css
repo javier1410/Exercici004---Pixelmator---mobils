@@ -663,6 +663,56 @@ br {
 
 
 
+/* = = = = = = Mòbil F5 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+
+br { 
+    display: none;
+}
+
+/* Contenedor general */
+.boxf5{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* Cabecera */
+.cabecera_f5 h2{
+    margin: 50px 0 0 0;
+    color: #000000;
+    font-weight: 500;
+    font-size: 42px;
+}
+
+.cabecera_f5 p{
+    color: #000000;
+    line-height: 1.5;
+    font-size: 19px;
+    font-weight: 300;
+    padding: 0 30px;
+
+}
+
+/* Imagen principal */
+.img_f5{
+    max-width: 95%;
+    width: auto;
+    margin: 20px 0;
+    box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+}
+
+
+
+
+
 
 /* - - - - - - - - - - - F6 - - - - - - - - - - - - - - */
 
