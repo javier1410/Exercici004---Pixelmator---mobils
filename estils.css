@@ -826,6 +826,133 @@ br {
 }
 
 
+/* = = = = = = Mòbil F6 = = = = = */
+/* = = = = = = = = = = = = = = */
+
+@media (max-width:768px){
+
+br {
+    display: none;
+}
+
+/* Contenedor general */
+.boxf6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+/* Rectángulo principal */
+.rectangle_f6 {
+    flex-direction: column;
+    max-width: 95%;
+    width: auto;
+    border-radius: 0.9rem;
+    padding: 1.9rem 1.9rem 0 1.9rem;
+}
+
+/* Título y texto dentro del rectángulo */
+.titulo_f6 {
+    font-size: 1.4rem;
+    margin: 1.3rem 0 0.6rem 0;
+}
+
+.texto_f6 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0 0 1.3rem 0;
+}
+
+/* Imagen dentro del rectángulo */
+.img_rectangle_f6 {
+    width: 100%;
+    height: auto;
+    margin-top: 1.3rem;
+    padding-left: 2.5rem;
+}
+
+/* Dos cuadrados (izq y der) se apilan verticalmente */
+.box_dos_cuadradosf6 {
+    flex-direction: column;
+    margin: 1.3rem 0;
+    gap: 1.9rem;
+}
+
+/* Cuadrado izquierdo */
+.cuadradosf6_izq {
+    padding: 3.1rem;
+    border-radius: 0.9rem;
+    position: relative;
+}
+
+.cuadradosf6_izq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.9rem;
+}
+
+/* Línea horizontal debajo del título (subrayado) */
+.cuadradosf6_izq::before {
+    content: "";
+    position: absolute;
+    top: 3.4rem; 
+    bottom: 0; 
+    left: 3rem;
+    width: 0.1rem;
+    background-color: rgb(223, 198, 90);
+    border-radius: 0.1rem;
+}
+.cuadradosf6_izq h2::after {
+    content: "";
+    position: absolute;
+    left: -0.4rem;
+    bottom: -0.3rem; /* Distancia entre el texto y la línea */
+    width: 17.8rem;
+    height: 0.1rem;
+    background-color: rgb(223, 198, 90);
+    border-radius: 0.1rem;
+}
+
+/* Texto dentro del cuadrado izquierdo */
+.cuadradosf6_izq p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* Cuadrado derecho */
+.cuadradosf6_der {
+    padding: 2.5rem;
+    border-radius: 0.9rem;
+    text-align: center;
+}
+
+.cuadradosf6_der img {
+    width: 80%;
+    max-width: 18.8rem;
+    height: auto;
+    margin-bottom: 1.3rem;
+}
+
+.cuadradosf6_der h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    text-align: start;
+    font-weight: 550;
+}
+
+.cuadradosf6_der p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    margin: 0;
+    text-align: start;
+}
+
+}
+
+
+
+
+
 
 
 /* - - - - - - - - - - - F6_5 - - - - - - - - - - - - - - */
