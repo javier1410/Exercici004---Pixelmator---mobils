@@ -1337,7 +1337,8 @@ font-size: 22px;
   }
 
   .Effects-Browser img {
-    position: static;
+    position: relative;
+    bottom: -23px;
     width: 100%;
     height: auto;
     margin-top: 0.5rem;
