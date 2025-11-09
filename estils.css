@@ -999,6 +999,7 @@ br {
 
 
 /* - - - - - - - - - - - F7 - - - - - - - - - - - - - - */
+
 .f7{
     display: flex;
     flex-direction: column;          
@@ -1033,10 +1034,53 @@ br {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
 }
 
+/* = = = = = = Mòbil F6 = = = = = */
+/* = = = = = = = = = = = = = = */
+@media (max-width: 768px) {
+    .f7{
+    display: flex;
+    flex-direction: column;          
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}     
+ .f7 .contenedor1{
+    width: 100%;
+    max-width: 900px;         
+    text-align: center;
+}
+.contenedor1 h1{
+    font-size:40px  ;
+    font-weight: bold;
+}
+.contenedor1 p{
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 300;
+    
+}
+.f7 .contenedor2{
+    width: 100%;
+    max-width: 900px;         
+    text-align: center;
+    z-index: 2;
+}
+ 
+  .f7 video {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    
+}
+}
 
 /* - - - - - - - - - - - F8 - - - - - - - - - - - - - - */
+
+
 
 .Boxf8{
     display: flex;
@@ -1206,35 +1250,34 @@ br {
     
 }
 .carta-verde{
-     flex-direction: column; /* apilada */
+   display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 95%;
-    height: 700px;
-    border-radius: 25px; 
-    object-fit: cover;   /*  llena el espacio recortando un poco */
-    border-radius: 20px; /* mantiene bordes redondeados */
+    background: #29bd81;
+    border-radius: 20px;
+    width: 90%;
+    height: 600px;
+   
+    overflow: hidden;
     
-}   
-
-.carta-vede-titulo{
-   margin-left: 0;
+}  .carta-vede-titulo {
+    margin-left: 0;
     padding: 1rem;
-    
-}
+  }
 
-.carta-verde p{
+  .carta-verde h3 {
     color: white;
-    width: 400px;
-    
-    
-}
+    margin: 0.5rem 0;
+  }
 
-.carta-verde h3{
+  .carta-verde p {
     color: white;
-    margin-left: 0px;
-    
-    
-}
+    font-size: 0.95rem;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
 
 .carta-verde img{
     width: 100%;
@@ -1249,42 +1292,41 @@ br {
     gap: 1rem;
     margin-bottom: 1rem;
 }
-.New-York{
-    border-radius:20px;
-    width: 400px; 
-    background-color:#f9f9f9 ;
-    color:#565656;
-    align-items: center;
-  height: 300px;
-    padding: 20px;
-    
-   }
-.New-York h3{
-    color: black;
-    margin-left: 6px;
-}
 
-.New-York video{
-    width: 100%;
-    height: 80px;
-    align-items: left;
-}
-.graphique{
-    border-radius:20px;
-    width: 400px; 
-    background-color:#f9f9f9 ;
-    color:#565656;
-    align-items: center;
-    padding: 20px;
-}
-.graphique h3{
+  .New-York,
+  .graphique {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .New-York h3,
+  .graphique h3 {
     color: black;
-    margin-left: 6px;
-}
-.graphique img{
-    width: 80%;
+    margin: 0.5rem 0;
+  }
+
+  .New-York p,
+  .graphique p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .New-York video {
+    width: 130%;
     height: auto;
-}
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
+
+  .graphique img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+  }
 }
 
 /* - - - - - - - - - - - - F9 - - - - -- - - - - - - - - */
@@ -1530,7 +1572,7 @@ font-size: 22px;
 .icof10{
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
+    width: 750px;
     gap: 100px;
 
     justify-content: center;
@@ -1574,13 +1616,17 @@ font-size: 22px;
 .icof10{
     display: flex;
     flex-wrap: wrap;
-    width: 400px;
-    gap: 100px;
-
+    width: 370px;
+    gap: 90px;
     justify-content: center;
 }
+
+
 .iconosf10{
-    width: 50%;   
+   width: 60px;              /* tamaño fijo */
+  height: 60px;             /* igual altura y anchura */
+  object-fit: contain;      /* evita deformaciones */
+  
 }
 .p_iconosf10{
     font-weight: bold;
@@ -1653,7 +1699,7 @@ font-size: 22px;
     text-align: center;
 }
 .Powered_by_the_latest h1{
-    font-size: 53px;
+    font-size: 40px;
 
 }
 .Powered_by_the_latest p{
@@ -1667,10 +1713,11 @@ font-size: 22px;
     gap: 70px;
     justify-content: center;
     text-align: center;
+    width: 300px;
     
 }
 .iconos_f11{
-    width: 7%;   
+    width: 23%;   
 
 }
 .contenedor_iconos_f11 h1{
@@ -1738,7 +1785,7 @@ font-size: 22px;
     text-align: center; 
 }
 .We_know_you h1{
-    font-size: 30px;
+    font-size: 35px;
 
 }
 .We_know_you p{
@@ -1751,17 +1798,17 @@ font-size: 22px;
     
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 300px;
     gap: 100px;
     justify-content: center;
     text-align: center;
 }
 .img_iconos_f12{
-    width: 18%;   
+    width: 40%;   
 
 }
 .p_iconos_f12{
-    font-size: 15px;
+    font-size: 20px;
     color: black;
     font-weight: bold;
 }
@@ -1807,24 +1854,27 @@ font-size: 22px;
 /* = = = = = = Mòbil F13= = = = = */
 /* = = = = = = = = = = = = = = */
 @media (max-width: 768px) {
-    .box_f13{
+
+  .box_f13 {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
-}
+    justify-content: center;   /* centra verticalmente */
+    text-align: center;
+    height: 100vh;             /* ocupa toda la altura de la pantalla */
+  }
 .box_f13 img{
-    width: 45%;
+    width: 40%;
 }
 .box_f13 p{
-    font-size: 20px;
+    font-size: 25px;
     line-height: 1.5;
     font-weight: 300;
     margin: 0px;
 }
 
 .box_f13 h1{
-    font-size: 40px;
+    font-size: 35px;
     margin: 0px; 
 }
 
