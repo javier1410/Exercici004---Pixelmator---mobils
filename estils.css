@@ -13,6 +13,11 @@ body{
     padding: 10px 15px;
   }
  
+  @media (max-width:768px){
+  body {
+    overflow-x: hidden; /* Soluciona el margen blanco de la derecha */
+  }
+}
 /* - - - - - - - - - - F1 - - - - - - - - - - - - - */
 .boxf1{
     width: 75vw;
