@@ -787,7 +787,7 @@ br {
     position: absolute;
     left:-7px;
     bottom: -5px; /* Distancia entre el texto y la línea */
-    width: 475px;
+    width: 320px;
     height: 1px;
     background-color: rgb(223, 198, 90);
     border-radius: 2px;
